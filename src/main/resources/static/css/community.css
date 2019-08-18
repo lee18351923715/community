@@ -1,0 +1,13 @@
+body{
+    background-color: gainsboro;
+}
+
+.main{
+    background-color: white;
+    margin:30px;
+}
+
+.publis_button{
+    float: right;
+    margin-bottom: 15px;
+}

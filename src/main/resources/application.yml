@@ -1,21 +1,18 @@
 server:
   port: 8887
-
 github:
   client:
     id: 230d7e5676db2517a66a
     secret: a64b6cd4a4fd70a22c89cb000740c1f34f8b8ab5
   redirect:
     uri: http://localhost:8887/callback
-
-  ##数据库
+##数据库
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: leeee
     url: jdbc:mysql:///community?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-
-  flyway:
-    baseline-on-migrate: true
-    locations: db/migration
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
